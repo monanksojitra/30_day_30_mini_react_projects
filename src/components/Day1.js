@@ -171,7 +171,6 @@ const Calculator = () => {
             <div className="col-10">
               <div className="result-history p-4 rounded-3 bg-light">
                 <h4>Result History</h4>
-
                 {history.length === 0 ? (
                   <p>No history yet.</p>
                 ) : (
@@ -185,7 +184,7 @@ const Calculator = () => {
                         Clear
                       </button>
                     </div>
-                    <ul className="list-group">
+                    <ul className="list-group ">
                       {history.map((entry, index) => (
                         <li key={index} className="list-group-item">
                           <strong>{entry.expression}</strong> = {entry.result}
