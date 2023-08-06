@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Day1 from "./components/Day1.js";
 import Day2 from "./components/Day2";
+import Day3 from "./components/Day3";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             </div>
           </div>
         </section>
+        {/* day 1 */}
         <div className="album bg-body-tertiary mb-5">
           <div className="container">
             <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
@@ -36,6 +38,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* day 2 */}
         <div className="album bg-body-tertiary mb-5">
           <div className="container">
             <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
@@ -47,10 +50,21 @@ function App() {
             </div>
           </div>
         </div>
+        {/* day 3 */}
+        <div className="album bg-body-tertiary mb-5">
+          <div className="container">
+            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
+              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main className="px-3">
+                  <Day3 />
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <Footer />
     </>
   );
 }
-
 export default App;
