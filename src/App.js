@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Day1 from "./components/Day1.js";
 import Day2 from "./components/Day2";
 import Day3 from "./components/Day3";
+import Day4 from "./components/Day4";
 
 function App() {
   return (
@@ -57,6 +58,18 @@ function App() {
               <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                 <main className="px-3">
                   <Day3 />
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* day 4 */}
+        <div className="album bg-body-tertiary mb-5">
+          <div className="container">
+            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
+              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <main className="px-3">
+                  <Day4 />
                 </main>
               </div>
             </div>
