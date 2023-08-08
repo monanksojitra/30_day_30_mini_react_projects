@@ -95,9 +95,9 @@ const ImageCard = ({ category }) => {
   return (
     <main>
       <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        {photos.map((photo) => {
+        {photos.map((photo,i) => {
           return (
-            <div className="col">
+            <div className="col" key={i}>
               <div className="card mb-4 rounded-3 shadow-sm">
                 <div className="card-body">
                   <div className="card">

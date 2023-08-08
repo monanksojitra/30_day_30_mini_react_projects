@@ -49,7 +49,7 @@ const Day3 = () => {
               type="email"
               id="email-id"
               name="email-id"
-              class="input__email m-2"
+              className="input__email m-2"
               placeholder="Add Your Think.."
               required=""
               value={newTodo}
@@ -65,10 +65,10 @@ const Day3 = () => {
           {todos.length === 0 ? (
             <p className="empty-list-message">Empty Todo list</p>
           ) : (
-            <ul class="list-group">
+            <ul className="list-group">
               {todos.map((todo) => (
                 <li
-                  class="list-group-item  list-data border mb-1"
+                  className="list-group-item  list-data border mb-1"
                   key={todo.id}
                 >
                   <p className="my-2">{todo.text}</p>
