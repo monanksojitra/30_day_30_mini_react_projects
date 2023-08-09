@@ -110,6 +110,7 @@ const ImageCard = ({ category }) => {
                           alt={photo.photographer}
                           className="card-img-top img-fluid rounded"
                           src={photo.src.medium}
+                          
                         />
                       </a>
                     </div>
