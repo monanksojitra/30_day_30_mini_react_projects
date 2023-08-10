@@ -8,6 +8,7 @@ import Day3 from "./components/Day3";
 import Day4 from "./components/Day4";
 import Day5 from "./components/Day5";
 import Day6 from "./components/Day6";
+import Day7 from "./components/Day7";
 
 function App() {
   return (
@@ -89,7 +90,7 @@ function App() {
             </div>
           </div>
         </div>
-        {/* day 5 */}
+        {/* day 6 */}
         <div className="album bg-body-tertiary mb-5">
           <div className="container">
             <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
@@ -102,6 +103,24 @@ function App() {
                 </a>
                 <main className="px-3">
                   <Day6 />
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* day 7 */}
+        <div className="album bg-body-tertiary mb-5">
+          <div className="container">
+            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
+              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
+                <a
+                  href="/"
+                  className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3"
+                >
+                  <span className="fs-4">Day 7: Countdown Timer ⏳</span>
+                </a>
+                <main className="px-3">
+                  <Day7 />
                 </main>
               </div>
             </div>
