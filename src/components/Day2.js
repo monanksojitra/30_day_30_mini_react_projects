@@ -80,7 +80,6 @@ const Day2 = () => {
   };
   return (
     <>
-      <h1 className="mb-4">Day-2 Form Validation</h1>
       <div className="container mt-5">
         <form className="row g-4" onSubmit={handleSubmit}>
           <div className="col-md-4">

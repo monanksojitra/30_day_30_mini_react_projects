@@ -33,7 +33,6 @@ const Calculator = () => {
   };
   return (
     <div className="container">
-      <h3 className="p-2">Day-1 Calculator</h3>
       <div className="row align-items-md-stretch my-4">
         <div className="col-md-6">
           <div className="text-bg-dark rounded-3">

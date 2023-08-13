@@ -53,12 +53,6 @@ const Day5 = () => {
 
   return (
     <>
-      <a
-        href="/"
-        className="d-flex align-items-center link-body-emphasis text-decoration-none mb-4"
-      >
-        <span className="fs-4">Day 5: Weather App with API Integration 🌦️</span>
-      </a>
       <div className="input-group mb-3 w-50 m-auto">
         <input
           type="text"

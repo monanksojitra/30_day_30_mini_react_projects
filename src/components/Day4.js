@@ -23,15 +23,10 @@ const Day4 = () => {
 
   return (
     <>
-      <div className="container py-3" id="ph">
+      <div className="container" id="ph">
         <header>
-          <div className="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-            <a
-              href="/"
-              className="d-flex align-items-center link-body-emphasis text-decoration-none"
-            >
-              <span className="fs-4">Day-4 Animated Image Gallery 🖼️</span>
-            </a>
+          <div className="d-flex flex-column flex-md-row align-items-center mb-2 border-bottom">
+          
             <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
               {categories.map((category) => (
                 <a

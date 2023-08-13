@@ -41,7 +41,7 @@ const Day3 = () => {
 
   return (
     <>
-      <h3 className="p-2">Day-3 Todo List with LocalStorage 📅</h3>
+     
       <div className="card text-center w-75 m-auto">
         <div className="input-group w-50 m-auto">
           <div className="form-floating m-3 oneline">

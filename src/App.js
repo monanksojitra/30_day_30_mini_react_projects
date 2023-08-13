@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,6 +10,19 @@ import Day6 from "./components/Day6";
 import Day7 from "./components/Day7";
 import Day8 from "./components/Day8";
 import Day9 from "./components/Day9";
+
+const componentList = [
+  { component: Day1, name: "Calculator with Result History 🧮" },
+  { component: Day2, name: "Interactive Form Validation 📝" },
+  { component: Day3, name: "Todo List with LocalStorage 📅" },
+  { component: Day4, name: "Animated Image Gallery 🖼️" },
+  { component: Day5, name: "Weather App with API Integration 🌦️" },
+  { component: Day6, name: "Social Media Card 📇" },
+  { component: Day7, name: "Countdown Timer ⏳" },
+  { component: Day8, name: "Infinite Scroll Image Gallery 📜" },
+  { component: Day9, name: "GitHub User Finder 🔍" },
+  // Add more components here if needed
+];
 
 function App() {
   return (
@@ -32,131 +44,28 @@ function App() {
             </div>
           </div>
         </section>
-        {/* day 1 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <main className="px-3">
-                  <Day1 />
-                </main>
+        {componentList.map(({ component: Component, name }, index) => (
+          <div className="album bg-body-tertiary mb-5" key={index}>
+            <div className="container">
+              <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
+                <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                  <p className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3">
+                    <span className="fs-4">
+                      Day {index + 1}: {name}
+                    </span>
+                  </p>
+                  <main className="px-3">
+                    <Component />
+                  </main>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* day 2 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <main className="px-3">
-                  <Day2 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 3 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <main className="px-3">
-                  <Day3 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 4 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <main className="px-3">
-                  <Day4 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 5 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <main className="px-3">
-                  <Day5 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 6 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                <p className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3">
-                  <span className="fs-4">Day 6: Social Media Card 📇</span>
-                </p>
-                <main className="px-3">
-                  <Day6 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 7 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-                <p className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3">
-                  <span className="fs-4">Day 7: Countdown Timer ⏳</span>
-                </p>
-                <main className="px-3">
-                  <Day7 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 8 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-                <p className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3">
-                  <span className="fs-4">
-                    Day 8: Infinite Scroll Image Gallery 📜{" "}
-                  </span>
-                </p>
-                <main className="px-3">
-                  <Day8 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* day 9 */}
-        <div className="album bg-body-tertiary mb-5">
-          <div className="container">
-            <div className="row row-cols-12 row-cols-sm-2 row-cols-md-3 g-3">
-              <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-                <p className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3">
-                  <span className="fs-4">Day 9: GitHub User Finder 🔍</span>
-                </p>
-                <main className="px-3">
-                  <Day9 />
-                </main>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </main>
       <Footer />
     </>
   );
 }
+
 export default App;
