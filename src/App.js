@@ -137,7 +137,7 @@ function App() {
                   className="d-flex align-items-center link-body-emphasis text-decoration-none mb-3"
                 >
                   <span className="fs-4">
-                    Day 7: Infinite Scroll Image Gallery 📜{" "}
+                    Day 8: Infinite Scroll Image Gallery 📜{" "}
                   </span>
                 </a>
                 <main className="px-3">
