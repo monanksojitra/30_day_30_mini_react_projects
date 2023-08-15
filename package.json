@@ -11,6 +11,7 @@
     "owl.carousel": "^2.3.4",
     "pexels": "^1.4.0",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-owl-carousel": "^2.3.3",
