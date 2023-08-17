@@ -28,7 +28,7 @@ const componentList = [
   { component: Day10, name: "Quiz App 📝" },
   { component: Day11, name: "Drag and Drop Todo List 📝" },
   { component: Day12, name: "Movie Recommendation App 🎬" },
-  { component: Day13, name: "Animated Navbar 🍔" },
+  { component: Day13, name: "Emoji Picker 😃" },
   // Add more components here if needed
 ];
 
