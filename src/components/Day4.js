@@ -26,7 +26,6 @@ const Day4 = () => {
       <div className="container" id="ph">
         <header>
           <div className="d-flex flex-column flex-md-row align-items-center mb-2 border-bottom">
-          
             <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
               {categories.map((category) => (
                 <a
@@ -90,7 +89,7 @@ const ImageCard = ({ category }) => {
   return (
     <main>
       <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        {photos.map((photo,i) => {
+        {photos.map((photo, i) => {
           return (
             <div className="col" key={i}>
               <div className="card mb-4 rounded-3 shadow-sm">
@@ -105,7 +104,6 @@ const ImageCard = ({ category }) => {
                           alt={photo.photographer}
                           className="card-img-top img-fluid rounded"
                           src={photo.src.medium}
-                          
                         />
                       </a>
                     </div>

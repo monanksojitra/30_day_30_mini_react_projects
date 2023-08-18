@@ -14,6 +14,7 @@ import Day10 from "./components/Day10";
 import Day11 from "./components/Day11";
 import Day12 from "./components/Day12";
 import Day13 from "./components/Day13";
+import Day14 from "./components/Day14";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -29,6 +30,7 @@ const componentList = [
   { component: Day11, name: "Drag and Drop Todo List 📝" },
   { component: Day12, name: "Movie Recommendation App 🎬" },
   { component: Day13, name: "Emoji Picker 😃" },
+  { component: Day14, name: "Auto Slider Image Carousel 🎠" },
   // Add more components here if needed
 ];
 
