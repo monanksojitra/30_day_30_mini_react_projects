@@ -15,6 +15,7 @@ import Day11 from "./components/Day11";
 import Day12 from "./components/Day12";
 import Day13 from "./components/Day13";
 import Day14 from "./components/Day14";
+import Day15 from "./components/Day15";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -31,6 +32,7 @@ const componentList = [
   { component: Day12, name: "Movie Recommendation App 🎬" },
   { component: Day13, name: "Emoji Picker 😃" },
   { component: Day14, name: "Auto Slider Image Carousel 🎠" },
+  { component: Day15, name: "Random Quote Generator 📜" },
   // Add more components here if needed
 ];
 
