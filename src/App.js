@@ -16,6 +16,9 @@ import Day12 from "./components/Day12";
 import Day13 from "./components/Day13";
 import Day14 from "./components/Day14";
 import Day15 from "./components/Day15";
+import Day16 from "./components/Day16";
+import Day17 from "./components/Day17";
+import Day18 from "./components/Day18";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -33,6 +36,9 @@ const componentList = [
   { component: Day13, name: "Emoji Picker 😃" },
   { component: Day14, name: "Auto Slider Image Carousel 🎠" },
   { component: Day15, name: "Random Quote Generator 📜" },
+  { component: Day16, name: "Currency Converter 💱" },
+  { component: Day17, name: "Pomodoro Timer ⏲️" },
+  { component: Day18, name: "Image Carousel 🎠" },
   // Add more components here if needed
 ];
 
