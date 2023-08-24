@@ -74,7 +74,7 @@ const Day12 = () => {
   };
 
   return (
-    <div>
+   
       <div className="movie-container">
         {movies.map((data, index) => (
           <div key={index} className="data-section">
@@ -95,14 +95,7 @@ const Day12 = () => {
                           width={350}
                           className="img-fluid"
                         />
-                        <a href="#!">
-                          <div
-                            className="mask"
-                            style={{
-                              backgroundColor: "rgba(251, 251, 251, 0.15)",
-                            }}
-                          />
-                        </a>
+                        
                       </div>
                       <div className="card-body">
                         <h5 className="card-title">
@@ -149,7 +142,7 @@ const Day12 = () => {
           </div>
         ))}
       </div>
-    </div>
+    
   );
 };
 

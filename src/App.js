@@ -19,6 +19,8 @@ import Day15 from "./components/Day15";
 import Day16 from "./components/Day16";
 import Day17 from "./components/Day17";
 import Day18 from "./components/Day18";
+import Day19 from "./components/Day19";
+import Day20 from "./components/Day20";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -39,6 +41,8 @@ const componentList = [
   { component: Day16, name: "Currency Converter 💱" },
   { component: Day17, name: "Pomodoro Timer ⏲️" },
   { component: Day18, name: "Image Carousel 🎠" },
+  { component: Day19, name: "Product Cards 🛍️" },
+  { component: Day20, name: "Virtual Keyboard ⌨️" },
   // Add more components here if needed
 ];
 
