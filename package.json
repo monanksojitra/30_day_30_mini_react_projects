@@ -14,6 +14,7 @@
     "emoji-mart": "^5.5.2",
     "emoji-picker-react": "^4.4.11",
     "framer-motion": "^10.16.0",
+    "install": "^0.13.0",
     "owl.carousel": "^2.3.4",
     "pexels": "^1.4.0",
     "react": "^18.2.0",
@@ -21,12 +22,14 @@
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-owl-carousel": "^2.3.3",
+    "react-player": "^2.12.0",
     "react-scripts": "5.0.1",
     "react-simple-keyboard": "^3.7.3",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.3",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.7",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
