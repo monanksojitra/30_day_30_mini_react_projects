@@ -23,6 +23,7 @@ import Day19 from "./components/Day19";
 import Day20 from "./components/Day20";
 import Day21 from "./components/Day21";
 import Day22 from "./components/Day22";
+import Day23 from "./components/Day23";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -47,6 +48,7 @@ const componentList = [
   { component: Day20, name: "Virtual Keyboard ⌨️" },
   { component: Day21, name: "Music Player 🎵" },
   { component: Day22, name: "Chat Application 💬" },
+  { component: Day23, name: "Animated Login Form 🚪" },
   // Add more components here if needed
 ];
 
