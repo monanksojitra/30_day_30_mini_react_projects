@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
-const Day1 = () => {
+const Day26 = () => {
   const [input, setInput] = useState("");
   const [history, setHistory] = useState([]);
+  const [specialFunction, setSpecialFunction] = useState(null);
+  const [memory, setMemory] = useState(null);
 
   const handleButtonClick = (value) => {
     setInput((prevInput) => prevInput + value);
@@ -28,9 +30,65 @@ const Day1 = () => {
   const handleClear = () => {
     setInput("");
   };
-  const historycler = () => {
+
+  const historyClear = () => {
     setHistory([]);
   };
+
+  const handleSpecialFunction = (func) => {
+    if (input !== "") {
+      try {
+        let result;
+        switch (func) {
+          case "sqrt":
+            result = Math.sqrt(parseFloat(input));
+            break;
+          case "exp":
+            result = Math.exp(parseFloat(input));
+            break;
+          case "ln":
+            result = Math.log(parseFloat(input));
+            break;
+          case "sin":
+            result = Math.sin(parseFloat(input));
+            break;
+          case "cos":
+            result = Math.cos(parseFloat(input));
+            break;
+          case "tan":
+            result = Math.tan(parseFloat(input));
+            break;
+          default:
+            result = "Error";
+        }
+
+        if (!isNaN(result)) {
+          setInput(result.toString());
+          setHistory((prevHistory) => [
+            ...prevHistory,
+            { expression: `${func}(${input})`, result },
+          ]);
+        } else {
+          setInput("Error");
+        }
+      } catch (error) {
+        setInput("Error");
+      }
+    }
+  };
+
+  const handleStoreInMemory = () => {
+    if (input !== "") {
+      setMemory(parseFloat(input));
+    }
+  };
+
+  const handleRecallMemory = () => {
+    if (memory !== null) {
+      setInput(memory.toString());
+    }
+  };
+
   return (
     <div className="container">
       <div className="row align-items-md-stretch my-4">
@@ -152,6 +210,44 @@ const Day1 = () => {
                       +
                     </button>
                   </div>
+                  {/*  */}
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("sqrt")}
+                  >
+                    √
+                  </button>
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("exp")}
+                  >
+                    ex
+                  </button>
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("ln")}
+                  >
+                    LN
+                  </button>
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("sin")}
+                  >
+                    SIN
+                  </button>
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("cos")}
+                  >
+                    COS
+                  </button>
+                  <button
+                    className="col btn btn-secondary m-1"
+                    onClick={() => handleSpecialFunction("tan")}
+                  >
+                    TAN
+                  </button>
+                  {/*  */}
                   <div className="row mt-3">
                     <button
                       className="col btn btn-danger"
@@ -177,7 +273,7 @@ const Day1 = () => {
                     <div className="row my-3 w-25">
                       <button
                         type="button"
-                        onClick={historycler}
+                        onClick={historyClear}
                         class="btn btn-outline-danger btn-sm"
                       >
                         Clear
@@ -185,7 +281,7 @@ const Day1 = () => {
                     </div>
                     <ul className="list-group ">
                       {history.map((entry, index) => (
-                        <li key={index} className="list-group-item">
+                        <li key={index} className="list-group-item w-75">
                           <strong>{entry.expression}</strong> = {entry.result}
                         </li>
                       ))}
@@ -201,4 +297,4 @@ const Day1 = () => {
   );
 };
 
-export default Day1;
+export default Day26;
