@@ -28,6 +28,8 @@ import Day24 from "./components/Day24";
 import Day25 from "./components/Day25";
 import Day26 from "./components/Day27";
 import Day27 from "./components/Day26";
+import Day28 from "./components/Day28";
+import Day29 from "./components/Day29";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -56,7 +58,9 @@ const componentList = [
   { component: Day24, name: "Recipe Book 🍳" },
   { component: Day25, name: "Memory Game 🧠" },
   { component: Day26, name: "Calculator with Advanced Functions 🧮" },
-  { component: Day27, name: "Chat Bot 🤖" },
+  { component: Day27, name: "Tic-Tac-Toe " },
+  { component: Day28, name: "Movie Ticket Booking 🎟️" },
+  { component: Day29, name: "Online Drawing Board 🎨" },
   // Add more components here if needed
 ];
 
