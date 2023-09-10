@@ -30,6 +30,7 @@ import Day26 from "./components/Day27";
 import Day27 from "./components/Day26";
 import Day28 from "./components/Day28";
 import Day29 from "./components/Day29";
+import Day30 from "./components/Day30";
 
 const componentList = [
   { component: Day1, name: "Calculator with Result History 🧮" },
@@ -61,6 +62,7 @@ const componentList = [
   { component: Day27, name: "Tic-Tac-Toe " },
   { component: Day28, name: "Movie Ticket Booking 🎟️" },
   { component: Day29, name: "Online Drawing Board 🎨" },
+  { component: Day30, name: "Portfolio Website 🌐" },
   // Add more components here if needed
 ];
 
